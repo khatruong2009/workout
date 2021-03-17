@@ -1,8 +1,28 @@
 import React from 'react'
 
 const AddWorkout = () => {
+
+  const handleClick = () => {
+    console.log("click");
+  }
+
   return (
-    <button>Add Workout</button>
+    <div>
+
+      <div className="workout-input">
+
+        <label>Workout Name:</label>
+        <input></input>
+        <label>Weight:</label>
+        <input></input>
+        <label>Reps:</label>
+        <input></input>
+
+      </div>
+
+      <button onClick={handleClick}>Add Workout</button>
+
+    </div>
   )
 }
 
