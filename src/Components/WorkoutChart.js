@@ -1,11 +1,18 @@
-import React from 'react';
-import workouts from "./AddWorkout";
+import {React} from 'react';
  
-const WorkoutChart = () => {
+const WorkoutChart = (props) => {
+
+  const list = props.workouts.map((workout, index) => {
+    return (
+      <li key={index}>{workout}</li>
+    )}
+  )
+  
   return (
     <div>
-      <p>{workouts[0]}</p>
-      <p>test: {workouts[0]}</p>
+      <ul>
+        {list}
+      </ul>
     </div>
   )
 }
