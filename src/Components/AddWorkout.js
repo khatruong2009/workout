@@ -8,6 +8,9 @@ const AddWorkout = (props) => {
 
   const handleClick = () => {
     props.addWorkout(workoutName, workoutWeight, workoutReps);
+    setWorkoutName("");
+    setWorkoutWeight("");
+    setWorkoutReps("");
   }
 
   return (

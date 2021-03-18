@@ -5,10 +5,10 @@ import WorkoutChart from "./Components/WorkoutChart";
 
 function App() {
 
-  const workouts = [];
+  const [workouts, setWorkouts] = useState([]);
 
   const addWorkout = (name, weight, reps) => {
-    workouts.push(name, weight, reps);
+    setWorkouts(workout => [...workout, {name, weight, reps}]);
     console.log(workouts);
   }
 
